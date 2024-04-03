@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <style>
+        .textWhite {
+            color: white;
+        }
+
+        .textPurple {
+            color: purple;
+        }
+
+    </style>
+   <h1 id="h1">DOM Manipulation</h1> 
+
+<button id="red">Red</button>
+<button id="blue">Blue</button>
+<button id="white">White</button>
+<button id="purple">Purple</button>
+   <script>
+    console.log("Hello")
+
+    function consoleBlue() {
+        console.log('Blue Clicked')
+    }
+
+    function consoleRed() {
+        console.log('Red Clicked')
+    }
+    
+
+    const redButton = document.getElementById('red')
+    const blueButton = document.getElementById('blue')
+    const whiteButton = document.getElementById('white')
+    const purpleButton = document.getElementById('purple')
+    const h1 = document.getElementById('h1')
+
+    redButton.addEventListener('click', () => {
+        console.log('RED clicked')
+        document.body.style.backgroundColor = 'red'
+    })
+
+    blueButton .addEventListener('click', () => {
+        console.log('BLUE clicked')
+        document.body.style.backgroundColor = 'blue'
+    })
+     
+    
+    console.log(redButton)
+    console.log(blueButton)
+   </script>
+</body>
+</html>
